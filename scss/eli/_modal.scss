@@ -1,0 +1,68 @@
+/**
+* Forked from : https://codepen.io/LFeh/pen/oEula
+* Works by reading the jump-link target in the url
+**/
+.eli a.eli-button--circle{
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+        position: absolute;
+    right: 6px;
+    top: 6px;
+}
+.eli-modal:before {
+  content: "";
+  display: none;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.eli-modal:target:before {
+  display: block;
+}
+.eli-modal:target .eli-modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  top: 20%;
+}
+.eli-modal-dialog {
+  background: #fefefe;
+  border: #333 solid 1px;
+  border-radius: 5px;
+  margin-left: -200px;
+  position: fixed;
+  left: 50%;
+  top: -100%;
+  z-index: 11;
+  width: 360px;
+  -webkit-transform: translate(0, -500%);
+  -ms-transform: translate(0, -500%);
+  transform: translate(0, -500%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -moz-transition: -moz-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+.eli-modal-body {
+  padding: 20px;
+}
+.eli-modal-header,
+.eli-modal-footer {
+  padding: 10px 20px;
+}
+.eli-modal-header {
+  border-bottom: #eee solid 1px;
+}
+.eli-modal-header h2 {
+  font-size: 20px;
+}
+.eli-modal-footer {
+  border-top: #eee solid 1px;
+  text-align: right;
+}

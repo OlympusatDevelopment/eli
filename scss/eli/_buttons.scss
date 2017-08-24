@@ -1,0 +1,52 @@
+/**
+* Button types : default:square, rounded, circle
+**/
+.eli{
+    a.eli-button,
+    a.eli-button--circle,
+    a.eli-button--rounded{
+        color: #fff;
+        display: inline-block;
+        text-decoration: none; 
+    }
+
+    a.eli-button,
+    a.eli-button--rounded{
+        line-height: 39px;
+    }
+
+    a.eli-button--circle{
+        line-height: 60px;
+    }
+}
+
+.eli-{
+    &button{
+        @extend .eli-reset; 
+        padding: 0 21px; 
+        background: #000;
+        color: #fff;  
+        line-height: 39px;
+        height: 39px;
+        width: 168px; 
+        text-align: center;
+
+        &--circle{
+            @extend .eli-button;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            padding: 0;
+            line-height: 60px;
+        }
+
+        &--rounded{
+            @extend .eli-button;
+            border-radius: 3px;
+        }
+
+        &:hover{
+            @extend .eli-hover;
+        }
+    }
+}

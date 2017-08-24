@@ -1,0 +1,156 @@
+/**
+*
+* Version 1.0.0
+*
+* This is the complete API.
+* To override particular styles, copy this file into your parent scss folder and rename it, 
+* importing it after the eli files in the cascade or wrap the import to bump specificity.
+* 
+* [[[[DON'T modify the _overrides.example.scss files and don't modify any files inside the eli directory, 
+* it's bad practice and will make spaghetti out of any future updates.]]]]
+*
+* RATIONALE :  Exposing tehe entire library api as an experiment in reasonability. 
+* Will it be easier to reason global styles if the api can be gleened here?
+**/
+$color-h : #333;
+$color-h-secondary : lighten(#333,15%);
+$color-text : #333;
+$color-text-secondary : lighten(#333,15%);
+$color-text-alt : #fff;
+$color-text-alt-secondary : darken(#fff,15%);
+$color-link: #4d9bce;
+$color-border : lighten(#333,15%);
+
+.eli-{
+    /**
+    * Buttons
+    **/
+    &button{
+        &--rounded{}
+        &--circle{}
+         &:hover{}
+    }
+
+    /**
+    * Forms
+    **/
+    &form{
+        input,
+        textarea{}
+    }
+}
+
+/**
+* Modal
+**/
+.eli a.eli-button--circle{}
+.eli-modal:before {}
+.eli-modal:target:before {}
+.eli-modal:target .eli-modal-dialog {}
+.eli-modal-dialog {}
+.eli-modal-body {}
+.eli-modal-header,
+.eli-modal-footer {}
+.eli-modal-header {}
+.eli-modal-header h2 {}
+.eli-modal-footer {}
+
+/**
+* More Buttons [Converted anchors actually]
+**/
+.eli{
+    a.eli-button,
+    a.eli-button--circle,
+    a.eli-button--rounded{}
+
+    a.eli-button,
+    a.eli-button--rounded{}
+
+    a.eli-button--circle{}
+}
+
+/**
+* Type
+**/
+.eli{
+    .underline{}
+
+    h1,h2,h3,h4,h5,h6,p,li,span,ol,input,a,{
+        &--secondary{}
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        .secondary{}
+    }
+
+    h1 {}
+    h2 {}
+    h3 {}
+    h4 {}
+    h5 {}
+    h6 {}
+    p,li,span,ol,input{
+        &--secondary{}
+    }
+    a{}
+    p{
+        &:last-of-type{}
+    }
+
+    /* Tables */
+    table{
+        td,
+        th{}
+    }
+
+    /* Code blocks */
+    code {}
+}
+
+.eli{
+    .eli-{
+        &-underline{}
+
+        &h1,&h2,&h3,&h4,&h5,&h6,&p,&li,&span,&ol,&input,&a,{
+            &--secondary{}
+        }
+
+        &h1,&h2,&h3,&h4,&h5,&h6{
+            &--secondary{}
+        }
+
+        &h1 {}
+
+        &h2 {}
+
+        &h3 {}
+
+        &h4 {}
+
+        &h5 {}
+
+        &h6 {}
+
+        &p,&li,&span,&ol,&input{
+            &--secondary{}
+        }
+
+        &a{}
+
+        &p{
+            &:last-of-type{}
+        }
+
+        /* Tables */
+        &table{
+            td,
+            th{}
+        }
+
+        /* Code blocks */
+        &code {}
+    }
+}
+
+/* Leading paragraph text */
+p.eli-lead{}
