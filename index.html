@@ -1,42 +1,16 @@
-# eli
-Eli is a short and sweet little scss toolset for standardizing Olympusat's UI components.
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/style.css"/>
+</head>
+<body class="">
 
-This toolset Follows the BEM and OOCSS methodologies
-
-## Import all of it into your scss project 
-```
-@import './eli/eli';
-```
-
-## Import selective parts of the library
-```
-@import "./eli/color";
-@import "./eli/type";
-@import "./eli/buttons";
-@import "./eli/forms";
-@import "./eli/modal";
-```
-
-## Usage
-
-#### Gotchas
-1. When importing the form file individually, you must import the utils and buttons file first, as they're dependencies.
-2. When importing any file indiviually, it's best to import utils first
-
-```
-@import "./eli/utils";
-@import "./eli/buttons";
-@import "./eli/forms";
-```
-```
-@import "./eli/utils";
-@import "./eli/buttons";
-```
-
-#### Examples
-##### Run the index.html file to see a live example
-```
- <!-- Common Components  -->
+    <!-- Common Components -->
     <h1 class="eli--underline">H1 Eli scss library</h1>
     <h2 class="eli-h2--secondary">H2 Because Eli is short and sweeet</h2> 
     <br/>
@@ -123,7 +97,7 @@ This toolset Follows the BEM and OOCSS methodologies
         </div>
         <!-- /Modal -->
     </div>
-```
 
-## Overrides
-To override particular styles, copy the _overrides.example.scss into your parent scss folder and rename it, importing it after the eli files in the cascade or wrap the import to bump specificity. [DON'T modify the examples files and don't modify any files inside the eli directory, it's bad practice and will make spaghetti out of any future updates.]
+    <script src="./scripts/index.js"></script>
+</body>
+</html>

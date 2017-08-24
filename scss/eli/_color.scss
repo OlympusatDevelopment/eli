@@ -1,0 +1,12 @@
+
+/**
+* Color definitions
+**/
+$color-h : #333 !default;
+$color-h-secondary : lighten(#333,25%) !default;
+$color-text : #333 !default;
+$color-text-secondary : lighten(#333,25%) !default;
+$color-text-alt : #fff !default;
+$color-text-alt-secondary : darken(#fff,25%) !default;
+$color-link: #4d9bce !default;
+$color-border : lighten(#333,60%) !default;

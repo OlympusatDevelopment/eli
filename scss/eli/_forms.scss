@@ -1,0 +1,60 @@
+/**
+* Form and input styling
+**/
+.eli-{
+    &form{
+        @extend .eli-reset;
+        max-width: 350px;
+
+        input,
+        textarea{
+            @extend .eli-reset;
+            width: 100%;
+            border: 1px solid #efefef;
+        }
+
+        &--rounded{
+            input,
+            textarea{
+                border-radius: 3px;
+            }
+        }
+
+        input[type="submit"],
+        button{
+            @extend .eli-button;
+            width: 100%;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        textarea,
+        label{
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        textarea{
+            margin-bottom: 9px;
+            padding: 6px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"]{
+            height: 39px;
+        }
+
+        textarea{
+            min-height: 78px;
+        }
+
+        label{
+            line-height: 1.5;
+        }
+    }
+}

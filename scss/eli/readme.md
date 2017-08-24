@@ -1,7 +1,6 @@
-# eli
-Eli is a short and sweet little scss toolset for standardizing Olympusat's UI components.
-
-This toolset Follows the BEM and OOCSS methodologies
+# Eli is the Olympusat scss style library
+## Why is it named Eli, you ask? Because I couldn't think of a name and eli is short and sweet. ;)
+Follows the BEM and OOCSS methodologies
 
 ## Import all of it into your scss project 
 ```
