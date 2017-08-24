@@ -1,5 +1,5 @@
 # eli
-Eli is a short and sweet little scss toolset for standardizing Olympusat's UI components.
+Eli is a short and sweet little sass(y) toolset for standardizing Olympusat's UI components.
 
 This toolset Follows the BEM and OOCSS methodologies
 
